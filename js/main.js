@@ -9,12 +9,23 @@ const housesDetails = document.querySelector("#houses-details");
 
 houses.forEach((house) => {
     const li = document.createElement("li");
-    li.appendChild(house.generateCrest());
     li.classList.add("house-item");
 
+    const crest = house.generateCrest();
+    li.appendChild(crest);
+
+    // Detail Content
+    const details = document.createElement("div");
+    details.classList.add("houses-details");
+    details.innerHTML = house.generateDetails();
+    details.style.display = "none";
+
+    li.appendChild(details);
+
     // Add click event to show details
-    li.addEventListener("click", () => {
-        housesDetails.innerHTML = house.generateDetails();
+    crest.addEventListener("click", () => {
+        const visible = details.style.display === "block";
+        details.style.display = visible ? "none" : "block";
     });
 
     housesList.appendChild(li);
