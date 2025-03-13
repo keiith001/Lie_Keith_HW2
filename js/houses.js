@@ -24,14 +24,14 @@ class Houses{
         const img = document.createElement("img");
         img.src = this.crest;
         img.alt = `${this.name} Crest`;
-        img.classList.add("house-crest");
+        img.classList.add("houses-crest");
         return img;
     }
 
     // Generate Details
     generateDetails() {
         return `
-            <h3>${this.name}</h3>
+            <h4>${this.name}</h4>
             <p><strong>Founder:</strong> ${this.founder}</p>
             <p><strong>House Ghost:</strong> ${this.ghost}</p>
             <p><strong>Symbol:</strong> ${this.symbol}</p>

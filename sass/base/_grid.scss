@@ -1,10 +1,5 @@
 @use "../abstracts/variables" as v;
 
-// Pushing main content a bit
-main {
-  margin-top: 160px;
-}
-
 // Line Separator
 .line-seperator {
   border-top: .5px solid v.$darkgrey;
@@ -97,9 +92,6 @@ footer {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-    main {
-      margin-top: 100px;
-    }
     .grid-con {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
