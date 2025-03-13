@@ -1,3 +1,8 @@
+import gryffindorCrest from '../images/gryffindor-crest.webp';
+import hufflepuffCrest from '../images/hufflepuff-crest.webp';
+import ravenclawCrest from '../images/ravenclaw-crest.webp';
+import slytherinCrest from '../images/slytherin-crest.webp';
+
 class Houses{
     constructor(
         crest,
@@ -46,7 +51,7 @@ class Houses{
 class Gryffindor extends Houses {
     constructor() {
         super(
-            "./images/gryffindor-crest.webp", 
+            gryffindorCrest, 
             "Gryffindor", 
             "Godric Gryffindor", 
             "Nearly Headless Nick", 
@@ -61,7 +66,7 @@ class Gryffindor extends Houses {
 class Hufflepuff extends Houses {
     constructor() {
         super(
-            "./images/hufflepuff-crest.webp", 
+            hufflepuffCrest, 
             "Hufflepuff", 
             "Helga Hufflepuff", 
             "Fat Friar", 
@@ -76,7 +81,7 @@ class Hufflepuff extends Houses {
 class Ravenclaw extends Houses {
     constructor() {
         super(
-            "./images/ravenclaw-crest.webp", 
+            ravenclawCrest, 
             "Ravenclaw", 
             "Rowena Ravenclaw", 
             "The Grey Lady", 
@@ -91,7 +96,7 @@ class Ravenclaw extends Houses {
 class Slytherin extends Houses {
     constructor() {
         super(
-            "./images/slytherin-crest.webp", 
+            slytherinCrest, 
             "Slytherin", 
             "Salazar Slytherin", 
             "The Bloody Baron", 
