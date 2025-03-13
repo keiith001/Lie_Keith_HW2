@@ -1,25 +1,25 @@
 @use "fonts";
 
 // Font Family
-$header-font: "Pixelad";
-$body-font: "Pixel-Space";
+$header-font: "dragonhelm";
+$body-font: "esther-regular";
 
 // Font Size (Mobile First)
-$body: 12px;
+$body: 16px;
 $header: 24px;
 $subhead: 18px;
 $display: 36px;
 $caption: 10px;
 
 // Font Size (Tablet)
-$m-body: 14px;
+$m-body: 18px;
 $m-header: 28px;
 $m-subhead: 20px;
 $m-display: 48px;
 $m-caption: 12px;
 
 // Font Size (Desktop)
-$l-body: 16px;
+$l-body: 20px;
 $l-header: 32px;
 $l-subhead: 24px;
 $l-display: 64px;
@@ -31,7 +31,7 @@ $black: #1B1A1A;
 $white: #FFFDFB;
 
 // Primary - Accent
-$yellow: #fbff00;
+$yellow: #cb9800;
 
 // Utility
 $darkgrey: #3e3e3e;
