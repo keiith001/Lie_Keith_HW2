@@ -635,7 +635,57 @@ houses.forEach((house)=>{
     housesList.appendChild(li);
 });
 
-},{"./houses.js":"6qIXY","./bounce.js":"7Innp"}],"6qIXY":[function(require,module,exports,__globalThis) {
+},{"./bounce.js":"7Innp","./houses.js":"6qIXY"}],"7Innp":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "bounceTransition", ()=>bounceTransition);
+function bounceTransition() {
+    document.querySelectorAll(".bounce").forEach((element)=>{
+        gsap.fromTo(element, {
+            opacity: 0,
+            y: -20,
+            scale: 0.9
+        }, {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.6,
+            ease: "bounce.out"
+        });
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"6qIXY":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Gryffindor", ()=>Gryffindor);
@@ -751,56 +801,6 @@ module.exports = require("90297e25a563b974").getBundleURL('1pq9E') + "ravenclaw-
 },{"90297e25a563b974":"lgJ39"}],"kePlo":[function(require,module,exports,__globalThis) {
 module.exports = require("bcaa279beaf0d9dd").getBundleURL('1pq9E') + "slytherin-crest.fb9498eb.webp" + "?" + Date.now();
 
-},{"bcaa279beaf0d9dd":"lgJ39"}],"gkKU3":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"7Innp":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "bounceTransition", ()=>bounceTransition);
-function bounceTransition() {
-    document.querySelectorAll(".bounce").forEach((element)=>{
-        gsap.fromTo(element, {
-            opacity: 0,
-            y: -20,
-            scale: 0.9
-        }, {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.6,
-            ease: "bounce.out"
-        });
-    });
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["iPmjX","bDbGG"], "bDbGG", "parcelRequire94c2")
+},{"bcaa279beaf0d9dd":"lgJ39"}]},["iPmjX","bDbGG"], "bDbGG", "parcelRequire94c2")
 
 //# sourceMappingURL=index.fbb3188c.js.map
